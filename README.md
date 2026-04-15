@@ -2,7 +2,7 @@
 
 ##  Live Demo
 
-https://mohit-jagudi.github.io/dbms-practical-website/
+https://mohit-jagudi.github.io/DBMS-Website/
 
 A simple and interactive **web-based DBMS Practical Website** that allows students to learn, practice, and visualize SQL queries with questions, queries, and outputs in one place.
 
