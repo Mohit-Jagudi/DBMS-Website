@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DBMS - Programs</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Data Base <span>Management System</span></div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">About</a></li>
+                <li><a href="programs.html" class="nav-link active">Programs</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="programs-section">
+        <div class="layout-grid">
+
+            <div class="topics-sidebar" id="topicsList">
+                <button class="topic-btn active" data-topic="ddl">DDL COMMANDS</button>
+                <button class="topic-btn" data-topic="dml">DML COMMANDS</button>
+                <button class="topic-btn" data-topic="select">DQL COMMANDS</button>
+                <button class="topic-btn" data-topic="where_orderby_alias">WHERE, ORDER BY & ALIAS</button>
+                <button class="topic-btn" data-topic="like">LIKE OPERATOR</button>
+                <button class="topic-btn" data-topic="group">GROUP BY / HAVING</button>
+                <button class="topic-btn" data-topic="subquery">SUBQUERIES</button>
+                <button class="topic-btn" data-topic="scalar">SCALAR FUNCTIONS</button>
+                <button class="topic-btn" data-topic="joins">JOINS</button>
+                <button class="topic-btn" data-topic="set_operators">SET OPERATORS</button>
+                <button class="topic-btn" data-topic="views">VIEWS</button>
+                <button class="topic-btn" data-topic="plsql">PL/SQL</button>
+                <button class="topic-btn" data-topic="plsql_control">PL/SQL DECISION CONTROL</button>
+                <button class="topic-btn" data-topic="plsql_loops">PL/SQL LOOPS</button>
+                <button class="topic-btn" data-topic="plsql_types">PL/SQL SELECT,%TYPE,%ROWTYPE</button>
+                <button class="topic-btn" data-topic="plsql_cursors">PL/SQL CURSORS</button>
+                <button class="topic-btn" data-topic="plsql_subprograms">PL/SQL PROCEDURES & FUNCTIONS</button>
+                <button class="topic-btn" data-topic="plsql_packages">PL/SQL PACKAGES</button>
+                <button class="topic-btn" data-topic="plsql_exceptions">PL/SQL EXCEPTIONS</button>
+                <button class="topic-btn" data-topic="plsql_triggers">PL/SQL TRIGGERS</button>
+            </div>
+            <div class="questions-panel">
+                <h3 id="currentTopicTitle">DDL COMMANDS</h3>
+                <div class="q-list" id="qListContainer">
+                </div>
+            </div>
+
+            <div class="result-panel" id="resultPanel">
+                <div class="placeholder-text"></div>
+
+                <div class="output-content" id="outputContent" style="display: none;">
+                    <h4 id="displayQ">Question Text</h4>
+                    <div class="query-box">
+                        <code id="displayQuery">SELECT * FROM EMP;</code>
+                    </div>
+                    <div class="table-container">
+                        <table id="resultTable">
+                            <thead id="tableHead"></thead>
+                            <tbody id="tableBody"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
